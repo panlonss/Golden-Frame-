@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Frame - Aro de Aureo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Golden Frame - Aro de Aureo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="upload.html">Aro de Aureo</a></li>
+        <li><a href="gallery.html">Galería</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Sube tu imagen de una edificación</h2>
+    <form id="upload-form">
+      <input type="file" id="imageInput" accept="image/*">
+      <button type="button" id="processButton">Procesar imagen</button>
+    </form>
+    <canvas id="imageCanvas" width="800" height="600"></canvas>
+    <p>La imagen se mostrará con un rectángulo áureo y una espiral áurea superpuestos.</p>
+  </main>
+  <script src="js/processUpload.js"></script>
+</body>
+</html>
